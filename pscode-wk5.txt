@@ -1,0 +1,69 @@
+// Exercise 1: Calculate the Sum of Two Numbers
+
+a + b = c
+
+num1 + num2 = sum
+print sum
+
+ask for 2 numbers 
+add the 2 number together 
+print on the screen the sum of those 2 numbers
+
+
+// Exercise 2: Check if a Number is Even or Odd
+Function CheckEvenOrOdd(number)
+    if number modulo 2 equals 0 then
+        return "Even"
+    else
+        return "Odd"
+    end if
+End Function
+
+// Exercise 3: 
+Write pseudo code that will perform the following.    
+
+a) Read in 5 separate numbers.   
+b) Calculate the average of the five numbers.
+c) Find the smallest (minimum) and largest (maximum) of the five entered numbers.
+d) Write out the results found from steps b and c with a message describing what they are
+
+Function ReadNumbersAndCalculate()
+    Declare Array numbers[5]
+    Declare Real total, average
+    Declare Real smallest, largest
+
+    // Read in 5 separate numbers
+    For i = 1 to 5 do
+        Print "Enter number ", i, ": "
+        Read numbers[i]
+    End For
+
+    // Calculate the total sum of the numbers
+    total = 0
+    For i = 1 to 5 do
+        total = total + numbers[i]
+    End For
+
+    // Calculate the average
+    average = total / 5
+
+    // Find the smallest and largest numbers
+    smallest = numbers[1]
+    largest = numbers[1]
+    For i = 2 to 5 do
+        if numbers[i] < smallest then
+            smallest = numbers[i]
+        end if
+        if numbers[i] > largest then
+            largest = numbers[i]
+        end if
+    End For
+
+    // Write out the results
+    Print "The average of the five numbers is: ", average
+    Print "The smallest number entered is: ", smallest
+    Print "The largest number entered is: ", largest
+End Function
+
+
+-- END --
